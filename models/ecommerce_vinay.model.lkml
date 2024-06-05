@@ -1,5 +1,5 @@
 connection: "thelook"
-# nnnnnnnnnn12345678
+# nnnnnnnnnn12345678bbbb
 # include all the views
 include: "/views/**/*.view.lkml"
 
