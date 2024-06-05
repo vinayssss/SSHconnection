@@ -1,7 +1,11 @@
 connection: "thelook"
-
+# nnnnnnnnnn
 # include all the views
 include: "/views/**/*.view.lkml"
+
+include: "/Test_Purposes.dashboard.lookml"
+
+include: "/Single.dashboard.lookml"
 
 datagroup: ecommerce_vinay_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -103,6 +107,7 @@ explore: inventory_items {
 }
 
 explore: orders {
+  # fields: [(users.state as new ),orders*]
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;

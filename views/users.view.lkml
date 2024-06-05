@@ -42,6 +42,7 @@ view: users {
     sql: ${TABLE}.last_name ;;
   }
   dimension: state {
+    label: "NEW_STATES"
     type: string
     sql: ${TABLE}.state ;;
   }
@@ -57,15 +58,15 @@ view: users {
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
-	id,
-	first_name,
-	last_name,
-	events.count,
-	orders.count,
-	saralooker.count,
-	sindhu.count,
-	user_data.count
-	]
+  id,
+  first_name,
+  last_name,
+  events.count,
+  orders.count,
+  saralooker.count,
+  sindhu.count,
+  user_data.count
+  ]
   }
 
 }
