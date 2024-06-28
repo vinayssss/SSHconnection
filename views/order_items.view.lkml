@@ -54,7 +54,7 @@ view: order_items {
   }
   measure: count {
     type: count
-    drill_fields: [id, orders.id, inventory_items.id]
+    drill_fields: [id, orders.id, inventory_items.id,Sum_of_sale_price,sale_price,orders.status,users.city,users.state,products.brand,products.department,users.age,returned_date,returned_quarter,phones,returned_month,users.first_name]
     # filters: [returned_date: "1 days"]
   }
 }
